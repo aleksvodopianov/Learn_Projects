@@ -1,0 +1,183 @@
+footer {
+  display: block;
+  width: 100%;
+  margin: 0 0 0;
+  padding: 0 0 0;
+  @media (min-width: 320px) and (max-width: 413px) {
+    display: none;
+  }
+  .promo {
+    display: block;
+    width: 100%;
+    height: 62px;
+    line-height: 62px;
+    background-image: url(../images/img-bg-footer-promo.png);
+    .layout {
+      ul {
+        display: inline-block;
+        margin: 0 0 0 6px;
+        li {
+          float: left;
+          margin: 0 38px 0 0;
+          .secured {
+            float: left;
+            width: 56px;
+            height: 55px;
+            margin: 5px 0 0 0;
+            @media (min-width: 768px) and (max-width: 1279px) {
+              margin: 5px 0 0 80px;
+            }		
+            @media (min-width: 414px) and (max-width: 767px) {
+              display: none;
+            }		
+            @media (min-width: 320px) and (max-width: 413px) {
+              display: none;
+            }
+            img {
+              size: 100%;
+            }
+          }
+          .ship {
+            float: left;
+            width: 41px;
+            height: 36px;
+            margin: 12px 0 0 0;
+            @media (min-width: 768px) and (max-width: 1279px) {
+              margin: 12px 0 0 40px;
+            }		
+            @media (min-width: 414px) and (max-width: 767px) {
+              display: none;
+            }		
+            @media (min-width: 320px) and (max-width: 413px) {
+              display: none;
+            }
+            img {
+              size: 100%;
+            }
+          }
+          p {
+            display: inline-block;
+            color: #fff;
+            margin: 0 0 0 5px;
+            @media (min-width: 768px) and (max-width: 1279px) {
+              display: none;
+            }		
+            @media (min-width: 414px) and (max-width: 767px) {
+              display: none;
+            }		
+            @media (min-width: 320px) and (max-width: 413px) {
+              display: none;
+            }
+          }
+        }
+      }
+      form {
+        float: right;
+        width: 292px;
+        height: 30px;
+        border: 1px solid #680e02;
+        border-radius: 12px;
+        margin: 14px 0 0 0;
+        overflow: hidden;
+        fieldset {
+          width: 100%;
+          display: block;
+          overflow: hidden;
+          input {
+            float: left;
+            width: calc(100% - 63px);
+            background-image: linear-gradient(to top, #c2bfb5, #efeeeb, #ffffff);
+            border: none;
+            color: #000;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0 0 0 20px;
+          }
+          input::placeholder {
+            color: #3a3a3a;
+          }
+          button {
+            float: right;
+            background-image: linear-gradient(to top, #8d1313, #710c0c, #7c1919, #913b3b, #b16c6c);
+            color: #ffc200;
+            width: 42px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: none;
+            border-left: 1px solid #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .about-us {
+    display: block;
+    width: 100%;
+    height: 242px;
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.28);
+    background-image: linear-gradient(to top, #5f0d02, #a81704);
+    @media (min-width: 414px) and (max-width: 767px) {
+      height: 900px;
+    }		
+    @media (min-width: 320px) and (max-width: 413px) {
+      height: 800px;
+    }
+    .layout {
+      padding: 0 0 0 30px;
+      @media (min-width: 414px) and (max-width: 767px) {
+        padding: 33px 0 0 200px;
+      }		
+      @media (min-width: 320px) and (max-width: 413px) {
+        padding: 33px 0 0 200px;
+      }
+      div {
+        float: left;
+        margin: 33px 75px 0 0;
+        @media (min-width: 768px) and (max-width: 1279px) {
+          margin: 33px 20px 0 0;
+        }		
+        @media (min-width: 414px) and (max-width: 767px) {
+          float: none;
+          &:nth-child(1){
+            margin: 0 20px 0 0;
+          }
+        }		
+        @media (min-width: 320px) and (max-width: 413px) {
+          float: none;
+          &:nth-child(1){
+            margin: 0 20px 0 0;
+          }
+        }
+        h3 {
+          font-size: 15px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+        ul {
+          position: relative;
+          li {
+            display: block;
+            a {
+              font-size: 13px;
+              color: #cfcfcf;
+              line-height: 1.54;
+            }
+          }
+        }
+        p {
+          color: #ffffff;
+          margin: 30px 0 0 0;
+          line-height: 1.54;
+        }
+        span {
+          color: #ffcc00;
+        }
+      }     
+    }
+  }
+}
