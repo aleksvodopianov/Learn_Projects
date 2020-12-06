@@ -1,2 +1,2 @@
-# Learn_Projects
-This is my learn Frontend projects 
+# Training_Projects
+My training projects on Frontend 
