@@ -1,0 +1,72 @@
+.pagination {
+  display: block;
+  overflow: visible;
+  height: 68px;
+  background-color: #e2ecf4;
+  border: 1px solid #cde1f1;
+  position: relative;
+  margin: 10px 0 0 0;
+  .previous {
+    float: left;
+    width: 132px;
+    height: 48px;
+    background-color: #acbece;
+    margin: 10px 0 10px 10px;
+    &:hover {
+      background-color: #538bc5;
+    }
+    a {
+      display: block;
+      font-size: 20px;
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      line-height: 48px;
+    }
+  }
+  .next {
+    float: right;
+    width: 132px;
+    height: 48px;
+    background-color: #acbece;
+    margin: 10px 10px 10px 0;
+    &:hover {
+      background-color: #538bc5;
+    }
+    a {
+      display: block;
+      font-size: 20px;
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      line-height: 48px;
+    }
+  }
+  ul.pages-numbers {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    li.pages-nth {
+      width: 47px;
+      height: 48px;
+      background-color: #538bc5;
+      font-size: 20px;
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      line-height: 48px;
+      margin: 0 5px 0 0;
+      &:hover {
+        background-color: #375c84;
+      }
+    }
+  }
+  .dots {
+    width: 100%;
+    display: block;
+    margin: 20px 0 24px 0;
+  }
+}

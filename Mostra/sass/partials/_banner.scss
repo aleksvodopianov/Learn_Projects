@@ -1,0 +1,53 @@
+.banner {
+  display: block;
+  overflow: hidden;
+  margin: 20px 0 0 0;
+  .banner-holder {
+    display: block;
+    width: 100%;
+    height: 171px;
+    img {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+  }
+  .banner-title {
+    position: absolute;
+    top: 24px;
+    right: 23px;
+    h3 {
+      font-size: 35.5px;
+      color: #688fb1;
+      text-align: right;
+      font-family: "Arial", sans-serif;
+      font-weight: 600;
+    }
+    p {
+      font-size: 18px;
+      color: #688fb1;
+      text-align: right;
+      font-family: "Arial", sans-serif;
+      font-weight: 400;
+      padding: 13px 0 0 0;
+    }
+    a {
+      float: right;
+      background-color: #d8812e;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+      width: 145px;
+      height: 38px;
+      text-align: center;
+      line-height: 38px;
+      margin: 28px 0 0 0;
+      &:hover {
+        background-color: #ffffff;
+        color: #d8812e;
+        border: 1px solid #d8812e;
+      }
+    }
+  }
+}

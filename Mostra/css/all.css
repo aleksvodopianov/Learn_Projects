@@ -1,0 +1,673 @@
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea,
+select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+/*@media end*/
+/*usage  @include font-size(13);*/
+/* Brand Colors ------------------------------------------------*/
+/* wrapper */
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+main {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+header .top {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+header .top .logo {
+  display: block;
+  overflow: visible;
+  width: 280px;
+  height: 55px;
+  float: left;
+  position: relative;
+  margin: 28px 0 30px 0;
+}
+header .top .logo a {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+}
+header .top .logo a img {
+  display: inline-block;
+  overflow: hidden;
+}
+header .top .logo h1 {
+  display: block;
+  overflow: visible;
+  text-indent: -9999px;
+}
+header .top .text {
+  display: block;
+  overflow: visible;
+  float: right;
+  margin: 48px 0 29px 0;
+}
+header .top .text p {
+  display: block;
+  overflow: visible;
+  width: 100%;
+  padding-bottom: 5px;
+  font-family: arial, sans-serif;
+  color: #b8b6b6;
+  font-size: 16.7px;
+  font-style: italic;
+}
+header .top .text a {
+  display: block;
+  overflow: visible;
+  text-align: right;
+  width: 100%;
+  font-family: arial, sans-serif;
+  color: #91aa77;
+  font-size: 16.7px;
+  font-weight: bold;
+  font-style: italic;
+  transition: all 500ms ease-in-out;
+}
+header .top .text a:hover {
+  color: #5a8ec6;
+  font-size: 18px;
+  transition: all 500ms ease-in-out;
+}
+
+.navigation {
+  width: 100%;
+  height: 48px;
+  background-color: #37a9fa;
+  display: inline-block;
+}
+.navigation .pages {
+  float: left;
+}
+.navigation .pages li {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.navigation .pages li::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4.5px 0 4.5px;
+  border-color: #375c84 transparent transparent transparent;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -4.5px;
+  display: none;
+  overflow: hidden;
+}
+.navigation .pages li:hover::after {
+  display: block;
+}
+.navigation .pages li a {
+  margin: 0px;
+  color: #ffffff;
+  padding: 0 15px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  overflow: visible;
+}
+.navigation .pages li a:hover {
+  background-color: #0f56ac;
+}
+.navigation .social {
+  float: right;
+}
+.navigation .social li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 12px 6px;
+}
+
+.banner {
+  display: block;
+  overflow: hidden;
+  margin: 20px 0 0 0;
+}
+.banner .banner-holder {
+  display: block;
+  width: 100%;
+  height: 171px;
+}
+.banner .banner-holder img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.banner .banner-title {
+  position: absolute;
+  top: 24px;
+  right: 23px;
+}
+.banner .banner-title h3 {
+  font-size: 35.5px;
+  color: #688fb1;
+  text-align: right;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+}
+.banner .banner-title p {
+  font-size: 18px;
+  color: #688fb1;
+  text-align: right;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  padding: 13px 0 0 0;
+}
+.banner .banner-title a {
+  float: right;
+  background-color: #d8812e;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  width: 145px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  margin: 28px 0 0 0;
+}
+.banner .banner-title a:hover {
+  background-color: #ffffff;
+  color: #d8812e;
+  border: 1px solid #d8812e;
+}
+
+.filters {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.filters .layout ul {
+  float: left;
+  line-height: 38px;
+  margin-top: 20px;
+}
+.filters .layout ul li {
+  float: left;
+  width: auto;
+  height: 38px;
+  border: 1px solid #dddddc;
+  margin: 0 5px 0 0;
+  text-align: center;
+  background-color: #ececec;
+  font-weight: bold;
+}
+.filters .layout ul li:hover {
+  float: left;
+  background-color: #e2ecf4;
+  border-color: #cde1f1;
+}
+.filters .layout ul li:active {
+  float: left;
+  background-color: #e2ecf4;
+  border-color: #cde1f1;
+}
+.filters .layout ul li a {
+  float: left;
+  padding: 0 20px 0 20px;
+  color: #a5a4a4;
+  font-size: 15px;
+}
+.filters .layout ul li a:hover {
+  float: left;
+  padding: 0 20px 0 20px;
+  color: #3b638f;
+  font-size: 15px;
+}
+.filters .layout ul li a:active {
+  float: left;
+  padding: 0 20px 0 20px;
+  color: #3b638f;
+  font-size: 15px;
+}
+.filters .layout form {
+  float: right;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.filters .layout form fieldset input {
+  width: 238px;
+  height: 36px;
+  border: 3px solid #cbddbb;
+  box-sizing: border-box;
+  outline: 1px solid #aec697;
+  padding: 0 0 0 10px;
+  font-size: 15px;
+  float: left;
+  margin: 0 5px 0 0;
+  margin-top: 1px;
+}
+.filters .layout form fieldset input::placeholder {
+  color: #676767;
+  font-weight: 100;
+}
+.filters .layout form fieldset button {
+  width: 80px;
+  height: 38px;
+  line-height: 35px;
+  color: #76885f;
+  border: 1px solid #aec697;
+  box-sizing: border-box;
+  background-color: #cbddbb;
+  font-size: 15px;
+  float: left;
+  font-weight: bold;
+  top: 1px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+main #content .product-list {
+  display: block;
+  overflow: hidden;
+}
+main #content .product-list .list {
+  width: 100%;
+  height: 820px;
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #b6c6dd;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0 0 0;
+}
+main #content .product-list .list li {
+  overflow: hidden;
+  width: 319px;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #b6c6dd;
+  padding-top: 24px;
+}
+main #content .product-list .list li .cover {
+  display: block;
+  overflow: hidden;
+  padding-right: 7px;
+}
+main #content .product-list .list li .cover h3 a {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #3b638f;
+}
+main #content .product-list .list li .cover .product {
+  width: 310px;
+  height: 310px;
+  box-sizing: border-box;
+  border-style: solid;
+  border: 1px;
+  border-color: #cde1f1;
+  background-color: #e2ecf4;
+  padding: 10px;
+  margin: 9px 0 11px 0;
+}
+main #content .product-list .list li .cover .product img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+main #content .product-list .list li .cover .price-cod {
+  background-color: #e2ecf4;
+}
+main #content .product-list .list li .cover .price-cod .price-l {
+  float: left;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #464646;
+}
+main #content .product-list .list li .cover .price-cod .price-l .price {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #669048;
+}
+main #content .product-list .list li .cover .price-cod .cod-r {
+  float: right;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #464646;
+}
+main #content .product-list .list li .cover .price-cod .cod-r .cod {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #676767;
+}
+
+.pagination {
+  display: block;
+  overflow: visible;
+  height: 68px;
+  background-color: #e2ecf4;
+  border: 1px solid #cde1f1;
+  position: relative;
+  margin: 10px 0 0 0;
+}
+.pagination .previous {
+  float: left;
+  width: 132px;
+  height: 48px;
+  background-color: #acbece;
+  margin: 10px 0 10px 10px;
+}
+.pagination .previous:hover {
+  background-color: #538bc5;
+}
+.pagination .previous a {
+  display: block;
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+}
+.pagination .next {
+  float: right;
+  width: 132px;
+  height: 48px;
+  background-color: #acbece;
+  margin: 10px 10px 10px 0;
+}
+.pagination .next:hover {
+  background-color: #538bc5;
+}
+.pagination .next a {
+  display: block;
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+}
+.pagination ul.pages-numbers {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+.pagination ul.pages-numbers li.pages-nth {
+  width: 47px;
+  height: 48px;
+  background-color: #538bc5;
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 48px;
+  margin: 0 5px 0 0;
+}
+.pagination ul.pages-numbers li.pages-nth:hover {
+  background-color: #375c84;
+}
+.pagination .dots {
+  width: 100%;
+  display: block;
+  margin: 20px 0 24px 0;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  height: 77px;
+  margin: 0 0 0;
+  padding: 0 0 0;
+}
+footer .left-side {
+  float: left;
+  width: 360px;
+  height: 20px;
+  margin: 25px 0 0 0;
+}
+footer .left-side p {
+  color: #628488;
+  font-size: 11px;
+  line-height: 20px;
+  font-family: Verdana, sans-serif;
+  font-weight: 400;
+}
+footer .left-side span {
+  color: #37565a;
+}
+footer .right-side {
+  float: right;
+  width: 360px;
+  margin: 30px 0 0 0;
+}
+footer .right-side ul {
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+footer .right-side ul li {
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  border-right: 1px solid #628488;
+}
+footer .right-side ul li:last-child {
+  border: none;
+}
+footer .right-side ul li a {
+  color: #628488;
+  font-family: "Verdana", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+}
+footer .right-side ul li a:hover {
+  color: #000;
+}
+footer .right-side ul li a:active {
+  color: #000;
+}
