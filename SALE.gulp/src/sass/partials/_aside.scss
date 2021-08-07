@@ -1,0 +1,175 @@
+main {
+  .layout {
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    height: 1300px;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      width: 688px;
+    }		
+    @media (min-width: 414px) and (max-width: 767px) {
+      width: 400px;
+    }		
+    @media (min-width: 320px) and (max-width: 413px) {
+      width: 288px;
+    }
+    .main-container {
+      display: block;
+      overflow: visible;
+      width: 960px;
+      height: 980px;
+      @media (min-width: 768px) and (max-width: 1279px) {
+        width: 800px;
+      }		
+      @media (min-width: 414px) and (max-width: 767px) {
+        width: 400px;
+      }		
+      @media (min-width: 320px) and (max-width: 413px) {
+        width: 288px;
+      }
+      aside {
+        display: block;
+        float: left;
+        overflow: hidden;
+        width: 212px;
+        height: 100%;
+        @media (min-width: 414px) and (max-width: 767px) {
+          display: none;
+        }		
+        @media (min-width: 320px) and (max-width: 413px) {
+          display: none;
+        }
+        .browse-categories {
+          display: block;
+          overflow: hidden;
+          h3 {
+            width: 212px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px;
+            text-align: center;
+            color: #ffffff;
+            background-image: url(../images/img-bg-BrowCateg.png);
+            background-repeat: no-repeat;
+          }
+          .list-BrCat {
+            width: 207px;
+            height: 359px;
+            border: solid 1px #f3dc94;
+            border-top: 0;
+            border-radius: 0 0 10px 10px;
+            background-color: #ffeeb7;
+            ul {
+              padding: 24px 8px 0 8px;
+              font-size: 12px;
+              li {
+                padding: 8px 0 9px 0;
+                border-top: 1px solid #fff;
+                &:nth-child(1) {
+                  padding: 0 0 8px 0;
+                  border-top: none;
+                }
+                a {
+                  font-size: 12px;
+                  font-weight: bold;
+                  margin: 0 0 0 38px;
+                  color: #434343;
+                }
+              }
+            }
+          }
+        }
+        .join-us {
+          display: block;
+          overflow: hidden;
+          width: 207px;
+          height: 330px;
+          border: solid 1px #e8e8e3;
+          border-radius: 10px;
+          background-color: #f5f5f2;
+          margin: 13px 0 0 0;
+          h3 {
+            width: 170px;
+            height: 32px;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #434343;
+            margin: 16px 0 0 22px;
+          }
+          form {
+            display: block;
+            overflow: hidden;
+            fieldset {
+              input {
+                width: 175px;
+                height: 27px;
+                background-color: #ffffff;
+                border-color: #fff;
+                margin: 12px 0 7px 14px;
+              }
+              button {
+                width: 88px;
+                height: 25px;
+                color: #fff;
+                font-size: 15px;
+                background-image: url(..//images/img-aside-bg-joinNowButton.png);
+                background-size: 100%;
+                border: none;
+                margin: 0 auto 13px auto;
+                padding: 0 0 0 0;
+                display: block;
+                overflow: hidden;
+                cursor: pointer;
+              }
+            }
+          }
+          ul {
+            display: block;
+            overflow: visible;
+            padding: 0 8px;
+            li {
+              border-top: 1px solid #fff;
+              margin: 0 0 10px 0;
+              padding: 5px 0 0 0;
+              &:nth-child(1) {
+                line-height: 32px;
+              }
+              .holder {
+                img {
+                  margin: 0 27px 0 11px;
+                  float: left;
+                }
+              }
+              .followUs-text {
+                a {
+                  font-size: 13px;
+                  color: #434343;
+                }
+              }
+            }
+          }
+        }
+        .payment-methods {
+          display: block;
+          overflow: hidden;
+          div {
+            width: 210px;
+            height: 189px;
+            margin: 30px 0 0 6px;
+            a {
+              img {
+                size: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

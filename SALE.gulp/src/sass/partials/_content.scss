@@ -1,0 +1,269 @@
+#content {
+  float: right;
+  width: 748px;
+  height: 980px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 480px;
+    float: left;
+    padding: 0 0 0 20px;
+  }		
+  @media (min-width: 414px) and (max-width: 767px) {
+    width: 400px;
+    height: 1300px;
+    float: left;
+  }		
+  @media (min-width: 320px) and (max-width: 413px) {
+    width: 300px;
+    height: 3980px;
+    float: left;
+  }
+  .filters {
+    float: left;
+    display: block;
+    margin: 0 0 0 20px;
+    @media (min-width: 414px) and (max-width: 767px) {
+      display: none;
+    }		
+    @media (min-width: 320px) and (max-width: 413px) {
+      display: none;
+    }
+    .sort {
+      float: left;
+      margin: 0 8px 0 0;
+      font-size: 12px;
+      color: #747474;
+      line-height: 19px;
+    }
+    form {
+      float: left;
+      margin: 0 10px 0 0;
+      select {
+        width: 109px;
+        height: 19px;
+        font-size: 12px;
+        color: #747474;
+        cursor: pointer;
+        option {
+          font-size: 12px;
+          color: #747474;
+        }
+      }
+    }
+    .items-page {
+      float: left;
+      margin: 0 0 0 115px;
+      font-size: 12px;
+      color: #747474;
+      line-height: 19px;
+      @media (min-width: 768px) and (max-width: 1279px) {
+        display: none;
+      }		
+      @media (min-width: 414px) and (max-width: 767px) {
+        display: none;
+      }		
+      @media (min-width: 320px) and (max-width: 413px) {
+        display: none;
+      }
+      a {
+        margin: 0 5px 0 5px;
+        color: #747474;
+        line-height: 19px;
+        &:hover {
+          color: #b20e00;
+        }
+        &:active {
+          color: #b20e00;
+        }
+      }
+    }
+  }
+  .our-products {
+    display: block;
+    float: left;
+    height: 620px;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      height: 870px;
+    }		
+    @media (min-width: 414px) and (max-width: 767px) {
+      height: 1250px;
+    }		
+    @media (min-width: 320px) and (max-width: 413px) {
+      display: none;
+    }
+    h2 {
+      display: block;
+      margin: 25px 0 16px 20px;
+      float: left;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    ul {
+      float: left;
+      overflow: hidden;
+      margin: 0 0 0 20px;
+      @media (min-width: 768px) and (max-width: 1279px) {
+        display: block;
+      }		
+      @media (min-width: 414px) and (max-width: 767px) {
+        display: block;
+      }		
+      @media (min-width: 320px) and (max-width: 413px) {
+        display: none;
+      }
+      li {
+        width: 156px;
+        height: 155px;
+        float: left;
+        margin: 0 28px 0 0;
+        padding: 0 0 44px 0;
+        overflow: hidden;
+        @media (min-width: 768px) and (max-width: 1279px) {
+          margin: 0 58px 0 0;
+        }		
+        @media (min-width: 414px) and (max-width: 767px) {
+          display: block;
+        }		
+        @media (min-width: 320px) and (max-width: 413px) {
+          display: none;
+        }
+        &:nth-last-child(-n + 4) {
+          padding: 0;
+          overflow: hidden;
+          @media (min-width: 768px) and (max-width: 1279px) {
+            &:nth-last-child(-n + 5) {
+              display: none;
+            }
+          }		
+          @media (min-width: 414px) and (max-width: 767px) {
+            padding: 0 0 44px 0;
+          }		
+          @media (min-width: 320px) and (max-width: 413px) {
+            display: none;
+          }
+        }
+        &:nth-child(4n) {
+          margin: 0;
+          @media (min-width: 768px) and (max-width: 1279px) {
+            margin: 0 28px 0 0;
+          }		
+          @media (min-width: 414px) and (max-width: 767px) {
+            margin: 0 28px 0 0;
+          }		
+          @media (min-width: 320px) and (max-width: 413px) {
+            display: none;
+          }
+        }
+        a {
+          .holder {
+            width: 156px;
+            height: 116px;
+            overflow: hidden;
+            margin: 0 0 6px 0;
+            img {
+              size: 100%;
+            }
+          }
+        }
+        p {
+          span:nth-child(1) {
+            font-size: 13px;
+            color: #292929;
+            &:nth-child(2) {
+              font-size: 13px;
+              color: #b20e00;
+            }
+          }
+          &:nth-child(1) {
+            color: #292929;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          &:nth-child(2) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .list-of-pages {
+    display: block;
+    float: left;
+    width: 706px;
+    height: 25px;
+    margin: 30px 0 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    @media (min-width: 768px) and (max-width: 1279px) {
+      width: 400px;
+      margin: 0;
+    }		
+    @media (min-width: 414px) and (max-width: 767px) {
+      width: 380px;
+      margin: 0;
+    }		
+    @media (min-width: 320px) and (max-width: 413px) {
+      width: 290px;
+      margin: 0;
+    }
+    ul {
+      text-align: center;
+      display: block;
+      overflow: hidden;
+      width: 706px;
+      height: 28px;
+      @media (min-width: 768px) and (max-width: 1279px) {
+        width: 400px;
+        margin: 0;
+      }		
+      @media (min-width: 414px) and (max-width: 767px) {
+        width: 380px;
+        margin: 0;
+      }		
+      @media (min-width: 320px) and (max-width: 413px) {
+        width: 290px;
+        margin: 0;
+      }
+      li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        &:nth-last-child(-n + 2) {
+          width: 40px;
+          height: 20px;
+        }
+        a {
+          display: block;
+          overflow: hidden;
+          font-size: 12px;
+          line-height: 20px;
+          color: #b20e00;
+          &:hover {
+            color: #fff;
+            background-color: #b20e00;
+          }
+          &:active {
+            color: #fff;
+            background-color: #b20e00;
+          }
+        }
+      }
+    }
+  }
+  .featured-products {
+    display: block;
+    @media (min-width: 768px) and (max-width: 1279px) {
+      display: none;
+    }		
+    @media (min-width: 414px) and (max-width: 767px) {
+      display: none;
+    }		
+    @media (min-width: 320px) and (max-width: 413px) {
+      display: none;
+    }
+    h3 {
+      margin: 16px 0 16px 36px;
+      float: left;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+}
